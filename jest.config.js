@@ -1,4 +1,14 @@
 module.exports = {
+  collectCoverage: true,
+  collectCoverageFrom: [
+    'src/**/*.{js|vue}'
+  ],
+  coverageDirectory: './tests/coverage/',
+  coverageReporters: [
+    'text',
+    'lcov',
+    'json'
+  ],
   moduleFileExtensions: [
     'js',
     'jsx',
@@ -17,7 +27,7 @@ module.exports = {
     'jest-serializer-vue',
   ],
   testMatch: [
-    '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)',
+    '**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)',
   ],
   testURL: 'http://localhost/',
 };

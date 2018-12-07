@@ -2,6 +2,7 @@
 node_modules
 /dist
 
+/tests/coverage/
 /tests/e2e/reports/
 selenium-debug.log
 
@@ -22,3 +23,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+*.sublime-*
